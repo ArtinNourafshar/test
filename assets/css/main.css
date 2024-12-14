@@ -1,0 +1,439 @@
+@font-face {
+  font-family: "mainfont";
+  src: url(../fonts/RobotoCondensed-VariableFont_wght.ttf) format(truetype);
+}
+@font-face {
+  font-family: "mocbin";
+  src: url(../fonts/Rockers\ Garage.ttf) format(truetype);
+}
+body {
+  font-family: "mainfont";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-navbar {
+  background-color: #008fcd;
+}
+
+.nav-link {
+  color: #eee;
+}
+
+.bg-welcome {
+  border: solid #008fcd;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  height: 70vh;
+  background-image: linear-gradient(to right bottom, rgba(77, 148, 179, 0.8274509804), rgba(12, 169, 226, 0.7647058824)), url(../images/sky.jpg);
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0% 0%, 0% 100%, 371% 0%);
+  color: rgb(207, 207, 207);
+}
+
+.bg-welcome1 {
+  border-radius: 250px;
+  padding-bottom: 10px;
+  height: 50vh;
+  background-image: linear-gradient(to right bottom, rgba(77, 148, 179, 0.8274509804), rgba(12, 169, 226, 0.7647058824)), url(../images/sky.jpg);
+  background-position: top;
+  background-size: cover;
+  color: rgb(207, 207, 207);
+}
+
+.Terahood-welcome {
+  font-family: "mocbin";
+  font-size: 80px;
+  letter-spacing: 20px;
+  animation-duration: 5s;
+  animation-name: moveInLeft;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.int {
+  letter-spacing: 3px;
+  font-size: 15px;
+  animation-duration: 5s;
+  animation-name: moveInRight;
+}
+
+.btn-welcome {
+  background-color: rgb(7, 120, 155);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7411764706);
+}
+
+.btn-t:active {
+  transform: translateY(-1px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7450980392);
+}
+
+.btn-welcome {
+  border-radius: 15px;
+}
+
+.logo {
+  transition: all 1s ease;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.hamburger-menu {
+  width: 55px;
+  height: 55px;
+  background-color: #00bbff;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+  transition: all 0.5s;
+}
+
+.change .hamburger-menu {
+  background-color: #eef0eb;
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background-color: #eee;
+  margin: 2px 0;
+  transform-origin: right;
+  transition: all 0.5s;
+}
+
+.change .line-1 {
+  transform: rotate(-40deg) translateY(-5px);
+  background-color: #ff0000;
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotate(40deg) translateY(5px);
+  background-color: #ff0000;
+}
+
+.bg-cover {
+  background-image: linear-gradient(to left top, rgba(0, 179, 255, 0.9019607843), rgba(6, 77, 185, 0.7803921569));
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  top: 35px;
+  right: 35px;
+  z-index: 100;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.change .bg-cover {
+  transform: scale(150);
+}
+
+.nav-list {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+}
+
+.change .nav-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-item {
+  margin: 1.5vh 0;
+}
+
+.nav-atag {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: letter-spacing 0.2s;
+}
+
+.nav-link:hover {
+  letter-spacing: 0.8rem;
+}
+
+.servicepage-section {
+  position: relative;
+  padding: 150px 0 120px;
+}
+
+.servicepage-section .service-box {
+  margin-bottom: 30px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.servicepage-section .service-box .box-image {
+  position: relative;
+  float: right;
+  width: 47%;
+}
+
+.servicepage-section .service-box .box-image .servicepage-image {
+  overflow: hidden;
+}
+
+.servicepage-section .service-box .box-image .servicepage-image img {
+  transition: all 0.3s ease-in-out;
+}
+
+.servicepage-section .service-box .box-image .servicepage-image:hover img {
+  transform: scale(1.1);
+}
+
+.servicepage-section .service-box .image_content {
+  box-shadow: 8px 2px 20px rgba(0, 0, 0, 0.38);
+  border-radius: 100px;
+  height: 82px;
+  width: 82px;
+  line-height: 78px;
+  text-align: center;
+  right: 20px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.servicepage-section .service-box .image_content:hover {
+  transform: translateY(-5px);
+}
+
+.servicepage-section .service-box .image_content .service-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.servicepage-section .service-box .box-content {
+  position: relative;
+  display: inline-block;
+  width: 53%;
+  padding: 53px 20px 52px 42px;
+}
+
+.servicepage-section .service-box .box-content h5 {
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+}
+
+.servicepage-section .service-box .box-content p {
+  margin-bottom: 15px;
+}
+
+.servicepage-section .service-box .box-content {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.servicepage-section .service-box .box-content i {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 12px;
+  transform: rotate(180deg);
+}
+
+.btn-dastebandi {
+  background-color: rgb(7, 120, 155);
+}
+
+.process-section {
+  background: linear-gradient(to left top, rgba(77, 148, 179, 0.8274509804), rgba(12, 169, 226, 0.7647058824));
+}
+
+.process-section .process_content {
+  text-align: center;
+}
+
+.process-section .process_content {
+  margin-bottom: 18px;
+}
+
+.process-section .process_content h2 {
+  margin-bottom: 46px;
+}
+
+.process-section .box-content {
+  padding: 50px 30px 68px;
+  border-bottom: 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.process-section .box-content:hover {
+  transform: translateY(-9px);
+}
+
+.process-section .box-content .icon {
+  position: relative;
+  float: left;
+  top: -20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.process-section .box-content .icon:hover {
+  transform: translateY(-5px);
+}
+
+.process-section .box-content span {
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.process-section .box-content h5 {
+  font-weight: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-card {
+  margin: 5rem auto;
+  width: 300px;
+}
+
+.text-a-cart {
+  text-decoration: none;
+  color: black;
+}
+
+.image-product {
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.caption-item-product {
+  text-align: center;
+  display: inline;
+  width: 300px;
+  transition: all 1.3s ease-in-out;
+  top: 0;
+}
+
+.text-product {
+  margin: 1rem 0;
+}
+
+.price-product {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.add-to-cart {
+  border: none;
+  background-color: transparent;
+  border: 2px solid #feac00;
+  border-radius: 12px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.title-product {
+  font-size: 20px;
+}
+
+.image-product::after {
+  content: "";
+  position: absolute;
+  width: 43%;
+  height: 3%;
+  box-shadow: 0 123px 32px rgba(0, 0, 0, 0.6), 0 123px 32px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  left: 30%;
+  bottom: 112px;
+}
+
+.item-grid-product {
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  padding: 12px 24px;
+}
+
+.item-grid-product:hover {
+  background-color: #31a9aa;
+  box-shadow: 0 8px 22px -1px #31a9aa;
+}
+
+.item-grid-product:hover .caption-item-product {
+  color: #fff;
+}
+
+.item-grid-product:hover .add-to-cart {
+  background-color: #feac00;
+  color: #fff;
+}
+
+.add-to-cart {
+  margin-top: 5px;
+}
+
+.item-grid-product:hover .image-product {
+  top: -40px;
+}
+
+/*# sourceMappingURL=main.css.map */
