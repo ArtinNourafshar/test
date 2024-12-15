@@ -361,18 +361,6 @@ body{
 
 
 // main card
-
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.container-card{
-  margin: 5rem auto;
-width: 300px;
-
-}
 .text-a-cart{
   text-decoration: none;
   color: black;
@@ -384,12 +372,11 @@ width: 300px;
 }
 .caption-item-product{
   text-align: center;
-  display: inline;
+ 
   width: 300px;
   transition: all 1.3s ease-in-out;
   top: 0;
 }
-
 .text-product{
   margin: 1rem 0;
 }

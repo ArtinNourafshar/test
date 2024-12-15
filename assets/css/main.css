@@ -342,17 +342,6 @@ body {
   font-weight: 600;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.container-card {
-  margin: 5rem auto;
-  width: 300px;
-}
-
 .text-a-cart {
   text-decoration: none;
   color: black;
@@ -366,7 +355,6 @@ body {
 
 .caption-item-product {
   text-align: center;
-  display: inline;
   width: 300px;
   transition: all 1.3s ease-in-out;
   top: 0;
