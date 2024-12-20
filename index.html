@@ -9,24 +9,17 @@
   <script src="./assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" defer></script>
   <link rel="stylesheet" href="./assets/css/main.css">
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/welcome.js"></script>
 
 
 
 </head>
 
 <body>
-  <!-- Modal -->
-  <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content custom-modal">
-        <div class="modal-header custom-modal-header">
-          <h5 class="modal-title" id="welcomeModalLabel">Welcome!</h5>
-        </div>
-        <div class="modal-body custom-modal-body"> Welcome to Terahood </div>
-      </div>
-    </div>
-  </div>
-  <link rel="stylesheet" href="./assets/js/Modal.js">
+  <!-- welcome -->
+ <div class="container">
+  <div id="welcomeMessage" class="welcome-message"> Welcome to Terahood 🤗 </div>
+ </div>
   <!-- navbar -->
   <div class="container-fluid bg-navbar">
     <div class="row justify-content-center align-items-center  ">
@@ -39,18 +32,7 @@
           <a class="nav-link active" aria-current="page" href="./allProduct.html">All product</a>
           <a class="nav-link active" aria-current="page" href="#">About us</a>
           <a class="nav-link active" aria-current="page" href="./loginPage.html" id="showName">Login</a>
-          <button type="button" class="btn  position-relative h-50  m-2 pt-0 p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-              <path
-                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
-            </svg>
-            <span
-              class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle "
-              id="cart-count">
 
-            </span>
-          </button>
         </nav>
       </div>
     </div>
@@ -96,13 +78,15 @@
           alt="logo">
       </div>
     </div>
-    <div class="row justify-content-center align-items-center text-center me-5 mt-3 ">
-      <h1 class="Terahood-welcome ">Terahood</h1>
-      <h3 class="int">Welcome to Terahood shop </h3>
-      <p class="int"> Here we have the best clothes that you need !!! <br>
-      </p>
+    <div class="container">
+      <div class="row justify-content-center align-items-center text-center me-5 mt-3 ">
+        <h1 class="Terahood-welcome ">Terahood</h1>
+        <h3 class="int">Welcome to Terahood shop </h3>
+        <p class="int"> Here we have the best clothes that you need !!! <br>
+        </p>
 
-      <div class="btn btn-t justify-content-center align-items-center mt-3 btn-welcome w-25"> See All Clothes </div>
+        <a href="./allProduct.html" class="btn btn-t justify-content-center align-items-center mt-3 btn-welcome w-25"> See All Clothes </a>
+      </div>
     </div>
   </div>
 

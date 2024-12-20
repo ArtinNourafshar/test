@@ -1,11 +1,8 @@
-// نمایش پیام خوش‌آمدگویی
-showWelcomeMessage();
+document.addEventListener('DOMContentLoaded', function() {
+  const welcomeMessage = document.getElementById('welcomeMessage');
+  welcomeMessage.style.display = 'block';
 
-// نمایش پیام خوش‌آمدگویی
-function showWelcomeMessage() {
-  $("#welcome-message").fadeIn();
-  
-  setTimeout(function () {
-    $("#welcome-message").fadeOut();
-  }, 3000); // 3 ثانیه
-  }
+  setTimeout(function() {
+      welcomeMessage.style.display = 'none';
+  }, 5000); 
+});
