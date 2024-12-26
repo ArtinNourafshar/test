@@ -26,10 +26,10 @@ function showCart() {
             productDiv.innerHTML = `
                 <div class="row mb-3">
                     <div class="col-3">
-                        <img src="${item.image}" alt="${item.name}" class="img-fluid" />
+                        <img src="${item.image}" alt="" class="img-fluid" />
                     </div>
                     <div class="col-9">
-                        <p>${item.name}</p>
+                        <p>${item.title}</p>
                     </div>
                 </div>
             `;
@@ -54,3 +54,5 @@ document.addEventListener('DOMContentLoaded', function() {
         showCart();
     }
 });
+
+

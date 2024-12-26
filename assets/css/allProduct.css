@@ -6,12 +6,11 @@
   font-family: "mocbin";
   src: url(../fonts/Rockers\ Garage.ttf) format(truetype);
 }
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
@@ -20,6 +19,7 @@ body {
 .card {
   cursor: pointer;
   transition: transform 0.2s;
+
 }
 
 .card:hover {
@@ -37,16 +37,16 @@ body {
 .hidden {
   display: none;
 }
-
-.card-edit {
+.card-edit{
   border-radius: 2px;
   transition: all 0.4s ease;
 }
-
-.card-edit:hover {
-  background-color: #31a9aa;
-  box-shadow: 0 8px 22px -1px #31a9aa;
+.card-edit:hover{
+  background-image: linear-gradient(to right top, #00565f , #17c4a7);
+box-shadow: 0 8px 22px -1px #31a9aa;
 }
+
+
 
 .navbar {
   transition: all 0.3s ease;
@@ -68,25 +68,34 @@ body {
   border-radius: 20px;
   padding: 10px 20px;
 }
-
-.bg-danger-for {
+.bg-danger-for{
   background-color: #31a9aa;
   border-radius: 60%;
   padding: 5px 10px;
 }
-
-.bg-danger-for:hover {
+.bg-danger-for:hover{
   background-color: #007bff;
 }
-
-.btn-edit-nav:hover {
+.btn-edit-nav:hover{
   text-decoration: underline;
+ 
 }
-
-.bg-navbar-gr {
+.bg-navbar-gr{
   background-image: url(../images/sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.btn{
 
-/*# sourceMappingURL=allProduct.css.map */
+background-color: #31a9aa;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px #000000bd;
+  background-image: linear-gradient(to right top, #02AABD , #00CDAC);
+}
+body{
+  background-image: linear-gradient(to right top, #00565f , #17c4a7);
+}
+
+

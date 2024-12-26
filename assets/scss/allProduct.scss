@@ -19,6 +19,7 @@ body {
 .card {
     cursor: pointer;
     transition: transform 0.2s;
+
 }
 
 .card:hover {
@@ -41,7 +42,7 @@ body {
     transition: all 0.4s ease;
 }
 .card-edit:hover{
-    background-color: #31a9aa;
+    background-image: linear-gradient(to right top, #00565f , #17c4a7);
 box-shadow: 0 8px 22px -1px #31a9aa;
 }
 
@@ -84,3 +85,17 @@ box-shadow: 0 8px 22px -1px #31a9aa;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.btn{
+
+background-color: #31a9aa;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px #000000bd;
+    background-image: linear-gradient(to right top, #02AABD , #00CDAC);
+}
+body{
+    background-image: linear-gradient(to right top, #00565f , #17c4a7);
+}
+
+
