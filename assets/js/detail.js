@@ -2,13 +2,12 @@ const data = [
 
 
 
-    { id: 1, title: 'product1', price: 15, image: './assets/images/image-product/5979068778316678977.jpg' },
-    { id: 2, title: 'product2', price: 10, image: './assets/images/image-product/5979068778316678981.jpg' },
-    { id: 3, title: 'product3', price: 17, image: './assets/images/image-product/5979068778316678981.jpg' },
-    { id: 4, title: 'product4', price: 25, image: './assets/images/image-product/5979068778316678981.jpg' },
-    { id: 5, title: 'product5', price: 33, image: './assets/images/image-product/5979068778316678981.jpg' },
-    { id: 6, title: 'product6', price: 33, image: './assets/images/image-product/5979068778316678981.jpg' },
-
+   { id: 1, title: 'ًQuavo T-shirt', price: "$45", image: './assets/images/image-product/5979068778316678977.jpg' },
+        { id: 2, title: 'Good vibe t-shirt', price: "$34", image: './assets/images/image-product/5979068778316678981.jpg' },
+        { id: 3, title: 'snoop sag', price: "$12", image: './assets/images/image-product/5979068778316678979.jpg' },
+        { id: 4, title: 'Monkey d luffy', price: "$18", image: './assets/images/image-product/5979068778316678978.jpg' },
+        { id: 5, title: 'Quavo ', price: "$77", image: './assets/images/image-product/5979068778316678977.jpg' },
+        { id: 6, title: 'Garden t-shirt', price: "$12", image: './assets/images/image-product/5979068778316678980.jpg' },
 
 
 

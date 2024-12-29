@@ -6,11 +6,12 @@
   font-family: "mocbin";
   src: url(../fonts/Rockers\ Garage.ttf) format(truetype);
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
@@ -19,7 +20,6 @@ body {
 .card {
   cursor: pointer;
   transition: transform 0.2s;
-
 }
 
 .card:hover {
@@ -37,16 +37,16 @@ body {
 .hidden {
   display: none;
 }
-.card-edit{
+
+.card-edit {
   border-radius: 2px;
   transition: all 0.4s ease;
 }
-.card-edit:hover{
-  background-image: linear-gradient(to right top, #00565f , #17c4a7);
-box-shadow: 0 8px 22px -1px #31a9aa;
+
+.card-edit:hover {
+  background-image: linear-gradient(to right top, #00565f, #17c4a7);
+  box-shadow: 0 8px 22px -1px #31a9aa;
 }
-
-
 
 .navbar {
   transition: all 0.3s ease;
@@ -68,34 +68,99 @@ box-shadow: 0 8px 22px -1px #31a9aa;
   border-radius: 20px;
   padding: 10px 20px;
 }
-.bg-danger-for{
+
+.bg-danger-for {
   background-color: #31a9aa;
   border-radius: 60%;
   padding: 5px 10px;
 }
-.bg-danger-for:hover{
+
+.bg-danger-for:hover {
   background-color: #007bff;
 }
-.btn-edit-nav:hover{
+
+.btn-edit-nav:hover {
   text-decoration: underline;
- 
 }
-.bg-navbar-gr{
+
+.bg-navbar-gr {
   background-image: url(../images/sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.btn{
 
-background-color: #31a9aa;
+.btn {
+  background-color: #31a9aa;
 }
+
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 20px #000000bd;
-  background-image: linear-gradient(to right top, #02AABD , #00CDAC);
-}
-body{
-  background-image: linear-gradient(to right top, #00565f , #17c4a7);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7411764706);
+  background-image: linear-gradient(to right top, #02AABD, #00CDAC);
 }
 
+body {
+  background-image: linear-gradient(to right top, #00565f, #17c4a7);
+}
 
+.animated-header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #02AABD, #17c4a7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  animation: slideIn 1s ease-in-out;
+  color: #ffeb3b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  animation: slideIn 1.5s ease-in-out;
+  color: #009cdf;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=allProduct.css.map */

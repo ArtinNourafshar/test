@@ -734,19 +734,19 @@
     cursor: pointer;
   }
   
-  @media (max-width: 1200px) {
-    .container-plan {
-      height: 100%;
-    }
+  // @media (max-width: 1200px) {
+  //   .container-plan {
+  //     height: 100%;
+  //   }
   
-    .card-pr-wrapper {
-      flex-wrap: wrap;
-    }
+  //   .card-pr-wrapper {
+  //     flex-wrap: wrap;
+  //   }
   
-    .card-pr {
-      margin: 50px;
-    }
-  }
+  //   .card-pr {
+  //     margin: 50px;
+  //   }
+  // }
   
   body{
     background-image: linear-gradient(to right, #415a80, #099c9ceb, #03ffa7, #5c20e6);

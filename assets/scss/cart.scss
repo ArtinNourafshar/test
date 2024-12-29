@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn {
+    width: 100%;
+}
+
+.cart-item img {
+    width: 100px; /* تنظیم عرض تصویر */
+    height: auto; /* حفظ نسبت تصویر */
+    object-fit: cover; /* تنظیم تصویر برای پوشش کامل */
+}

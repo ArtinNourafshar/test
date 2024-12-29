@@ -26,10 +26,10 @@ function showCart() {
             productDiv.innerHTML = `
                 <div class="row mb-3">
                     <div class="col-3">
-                        <img src="${item.image}" alt="" class="img-fluid" />
+                        <img src="${item.image}" alt="${item.name}" class="img-fluid" />
                     </div>
                     <div class="col-9">
-                        <p>${item.title}</p>
+                        <p>${item.name}</p>
                     </div>
                 </div>
             `;
